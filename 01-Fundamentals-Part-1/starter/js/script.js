@@ -103,6 +103,7 @@ const isAdult = ageLucas >= 18;
 
 // 📌__________ Operator Precedence __________📌
 
+/*
 let currentYear = 2024;
 const birthYearLucas = 2005;
 const birthYearNoah = 2006;
@@ -118,3 +119,16 @@ console.log(x, y);
 
 const averageAge = (ageLucas + ageNoah) / 2;
 console.log(averageAge);
+*/
+
+// 📌__________ Strings and Template Literals __________📌
+
+const firstName = "Lucas";
+const job = "Computer Science student";
+const uni = "Saint Catherine's University";
+const birthYear = 2005, currentYear = 2025;
+const myAge = currentYear - birthYear;
+
+const lucas = "I'm " + firstName + ", a " + myAge + " year old " + job + " at " + uni + ".";
+console.log(lucas);
+
