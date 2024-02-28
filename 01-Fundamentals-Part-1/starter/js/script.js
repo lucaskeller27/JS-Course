@@ -147,6 +147,7 @@ you can write strings with multiple lines freely.`;
 
 // 📌__________ Taking Decisions: if / else Statements __________📌
 
+/*
 const yourName = "Lucas";
 const yourAge = 14;
 
@@ -165,3 +166,59 @@ if (birthYear < 2000) {
   century = "You were born in the 21st century."
 }
 console.log(century);
+*/
+
+// 📌__________ Type Conversion and Coercion __________📌
+
+/*
+// Type conversion 👇
+let inputYear = '1991';
+inputYear = Number(inputYear);
+console.log(inputYear + 18);
+
+console.log(Number('Lucas'));
+console.log(typeof NaN);
+
+const sixteenHundred = 1600;
+console.log(String(sixteenHundred));
+
+// Type coercion 👇
+console.log("I am " + 18 + " years old.");
+
+console.log("23" - "10" - 3);
+console.log("23" * "2");
+console.log("23" / "2");
+
+let n = '1' + 1;
+n--;
+console.log(n);
+
+console.log(2 + 3 + 4 + '5');
+console.log('10' - '4' - '3' - 2 + '5');
+*/
+
+// 📌__________ Truthy and Falsy Values __________📌
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+// const money = 0;
+const money = 10;
+if (money) {
+  console.log("Don't spend it all!");
+} else {
+  console.log("Get a job!");
+}
+
+let height = 0;
+if (height) {
+  console.log("Height has already been defined.");
+} else if (height === 0) {
+  console.log("The value of 'height' is set to 0.")
+} else {
+  console.log("Height is undefined.");
+}

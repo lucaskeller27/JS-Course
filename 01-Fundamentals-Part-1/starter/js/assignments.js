@@ -63,13 +63,22 @@ language = "portuguese";
   
 // 📌 Exercise 5 - Strings and Template Literals 📌
 
-const description = `${country} is a country in ${continent}, and its ${population} million people speak ${language}.`;
-console.log(description);
+// const description = `${country} is a country in ${continent}, and its ${population} million people speak ${language}.`;
+// console.log(description);
 
 // 📌 Exercise 6 - Taking Decisions: if / else Statements 📌
 
-if (population > 33) {
-  console.log(`${country}'s population is above average.`);
-} else {
-  console.log(`${country}'s population is ${33 - population} million below average.`);
-}
+// if (population > 33) {
+//   console.log(`${country}'s population is above average.`);
+// } else {
+//   console.log(`${country}'s population is ${33 - population} million below average.`);
+// }
+
+// 📌 Exercise 6 - Type Conversion and Coercion 📌
+
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> "617"
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+
