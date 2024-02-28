@@ -123,12 +123,45 @@ console.log(averageAge);
 
 // 📌__________ Strings and Template Literals __________📌
 
+/*
 const firstName = "Lucas";
-const job = "Computer Science student";
-const uni = "Saint Catherine's University";
+const occupation = "Computer Science student";
+const organization = "Santa Catarina Federal University";
 const birthYear = 2005, currentYear = 2025;
 const myAge = currentYear - birthYear;
 
-const lucas = "I'm " + firstName + ", a " + myAge + " year old " + job + " at " + uni + ".";
+const lucas = "I'm " + firstName + ", a " + myAge + " year old " + occupation + " at " + organization + ".";
 console.log(lucas);
 
+const lucasNew = `I'm ${firstName}, a ${myAge} year old ${occupation} at ${organization}.`;
+console.log(lucasNew);
+
+const complicatedLongString = "With double quotes, \n\
+you need to use the 'backslash + n + backslash' \n\
+special character to write strings with multiple lines.";
+
+const simpleLongString = `With backticks (crase em português), 
+you can write strings with multiple lines freely.`;
+*/
+
+
+// 📌__________ Taking Decisions: if / else Statements __________📌
+
+const yourName = "Lucas";
+const yourAge = 14;
+
+if (yourAge >= 18) {
+  console.log(`${yourName}, you can already start taking driving lessons.`);
+} else {
+  const yearsLeft = 18 - yourAge;
+  console.log(`${yourName}, you still have ${yearsLeft} years left before you can start taking driving lessons.`);
+}
+
+const birthYear = 2000;
+let century
+if (birthYear < 2000) {
+  century = "You were born in the 20th century."
+} else {
+  century = "You were born in the 21st century."
+}
+console.log(century);

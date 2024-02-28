@@ -2,7 +2,7 @@
 
 const country = "Brasil";
 const continent = "South America";
-let population = 200;
+let population = 10;
 
 // console.log(
 //   "The country " +
@@ -37,27 +37,39 @@ language = "portuguese";
 
 // 📌 Exercise 4 - Basic Operators 📌
 
-let half = population / 2;
-console.log(half);
+// let half = population / 2;
+// console.log(half);
 
-population++;
-console.log(population);
+// population++;
+// console.log(population);
 
-const finlandPopulation = 6;
-console.log(population > finlandPopulation);
+// const finlandPopulation = 6;
+// console.log(population > finlandPopulation);
 
-const avgCountryPopulation = 33;
-console.log(population < avgCountryPopulation);
+// const avgCountryPopulation = 33;
+// console.log(population < avgCountryPopulation);
 
-const description =
-  country +
-  " is a country in " +
-  continent +
-  ", and its " +
-  population +
-  " million people speak " +
-  language + ".";
+// const description =
+//   country +
+//   " is a country in " +
+//   continent +
+//   ", and its " +
+//   population +
+//   " million people speak " +
+//   language + ".";
 
-  console.log(description);
+//   console.log(description);
 
   
+// 📌 Exercise 5 - Strings and Template Literals 📌
+
+const description = `${country} is a country in ${continent}, and its ${population} million people speak ${language}.`;
+console.log(description);
+
+// 📌 Exercise 6 - Taking Decisions: if / else Statements 📌
+
+if (population > 33) {
+  console.log(`${country}'s population is above average.`);
+} else {
+  console.log(`${country}'s population is ${33 - population} million below average.`);
+}
